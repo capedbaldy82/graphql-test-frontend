@@ -22,6 +22,10 @@ const Movie = () => {
     return <h1>Loading..</h1>;
   }
 
+  if (error) {
+    return <h1>Network Error</h1>;
+  }
+
   return (
     <div>
       <h1>{data?.movie?.title}</h1>
